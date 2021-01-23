@@ -18,7 +18,7 @@ ContactList.propType = {
         PropTypes.shape({
             id: PropTypes.number.isRequired,
             name: PropTypes.string.isRequired,
-            number: PropTypes.number.isRequired,
+            number: PropTypes.string.isRequired,
         })),
     OnDeleteContact: PropTypes.func.isRequired,
 }

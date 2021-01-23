@@ -12,8 +12,8 @@ class ContactForm extends React.Component {
         this.setState( {[name]: value,})
     }
 
-    handleSubmit = e => {
-        e.preventDefault();
+    handleSubmit = event => {
+        event.preventDefault();
         
         this.props.onSubmit({ ...this.state })
 
@@ -46,7 +46,7 @@ render() {
 
 ContactForm.propTypes = {
     name: PropTypes.string.isRequired,
-    number: PropTypes.number.isRequired,
+    number: PropTypes.string.isRequired,
     onSubmit: PropTypes.func.isRequired,
 };
 
